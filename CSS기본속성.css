@@ -1,0 +1,71 @@
+h1 {color: rgba(0, 0, 0, 0.5);} /*4번째 자리 alpha: 투명도*/
+body
+{   
+    text-indent: 1ch; /*단락 들여쓰기*/
+    background-image:
+    linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,0.5)),
+    url(https://cdn.pixabay.com/photo/2023/02/13/05/58/doodle-7786568_960_720.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+.text-center{
+    text-align: center; /*가운데정렬*/
+}
+
+.text-deco{
+    text-decoration: underline dashed 1px black;
+}
+
+a{
+    text-decoration: none; /*링크 밑줄 지워져서 나옴*/
+    text-decoration-line: overline; /*윗줄*/
+    text-decoration-color: blue;
+    text-decoration-style: wavy; /*물결 무늬*/
+    text-decoration-thickness: 3px;
+}
+
+.text-shadow{
+    text-shadow:red 1px 1px 2px; /*색-오른쪽이동-아래이동-번짐도*/
+}
+
+.test{
+    color: blue;
+}
+
+.font-mono{
+    font-family: Digital Display, "휴먼편지체";
+    font-weight: bold;
+    font-size: large;
+}
+/*띄어쓰기 사용: link클래스 안에 있는 a태그에 접근*/
+.link a:link {color: olive}
+.link a:visited{color: brown}
+.link a:hover{color: coral}
+.link a:active{color: khaki}
+/*클래스 이름 바로 뒤에도 상태를 붙여서 사용할 수 있다*/
+.p-hover:hover {
+    color:blueviolet;
+}
+
+.list-marker{
+    list-style-type: lower-alpha; /*마커모양변경*/
+    list-style-position: inside;
+    list-style-image: url(./img/wand-magic-sparkles-solid.svg);
+}
+
+/*두개 이상의 태그나 클래스에 동일한 디자인 넣을 때 ,로 병기*/
+.table-col,
+.table-col td{
+    border: 1px solid black;
+}
+/*묶어서 표시*/
+.table-col {border-collapse: collapse;}
+
+.table-cell,
+.table-cell td{
+    border: 3px dotted blue;
+}
+.table-cell{
+    empty-cells: hide;
+}

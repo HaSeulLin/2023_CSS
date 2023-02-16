@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS기본속성.css">
+</head>
+<body>
+    <h1>CSS 기본속성</h1>
+    <p>
+        rgba(0,0,0,0.5)는 네번째 값은 alpha 값으로, 0~1까지 값을 갖는다. <br>
+        0:완전 투명 1:투명도 없음
+    </p>
+    <h2>background</h2>
+    <p>
+        background-color와 같이 background에서 값을 세분화해서 넣을 수도 있지만
+        background를 통해서 한번에 넣을 수도 있다. (통합) <br>
+    </p>
+    <p>
+        image를 이용해서 여러가지 이미지를 넣을 수 있고 필요하다면 gradient 색상도 추가할 수 있다. <br>
+        attachment, position, repeat을 이용하여 이미지의 위치나 반복을 변경할 수 있다.
+    </p>
+    <h2 class="text-center">Text에 관한 스타일</h2>
+    <p class="text-center text-deco">display가 blcok인 글자는 중앙정렬이 된다</p>
+    <div class="text-center">
+        <a href="#" class="text-center">display가 inline인 글자</a> <!--중앙정렬안됨-->
+        <!--div 만들어서 단락 태그 안에 스타일 적용-->
+        <a href="">div를 사용해서 중앙정렬 가능</a>
+    </div>
+    <p>
+        text-decoration을 이용하면 글자를 꾸며줄 수 있다 <br>
+        a테그와 같이 이미 글자에 꾸밈이 들어가있는 경우 none으로 제거할 수도 있다
+    </p>
+    <p class="text-shadow test"> 글자에 그림자 TEXT SHADOW </p>
+    <h2>폰트 종류 FONT</h2>
+    <p class="font-mono">font
+        font-family를 통해서 원하는 폰트로 출력가능 <br>
+        현재 컴퓨터에 설치된 폰트만 보인다 <br>
+        font-weight로 글씨 굵기, font-size로 크기 조정 가능하다
+    </p>
+    <p>
+        css속성 중에 text와 font로 나눠진다 <br>
+        text의 경우는 css 통해서 추가적인 내용이 들어감 <br>
+        font의 경우는 font 자체에서 줄 수 있는 부분을 수정
+    </p>
+    <h2>링크 상태에 따른 CSS</h2>
+    <div class="link">
+        <a href="#">링크</a>
+    </div>
+    <p class="p-hover">
+        a태그는 상태에 따라서 디자인을 따로 넣어줄 수 있다 <br>
+        상태를 작성할 때는 a태그 바로 뒤에 :상태 를 통해 선택할 수 있다 <br>
+        클래스 이름 바로 뒤에도 상태를 붙여서 사용할 수 있다
+    </p>
+
+    <h2>리스트</h2>
+    <ul class="list-marker">
+        <li>마커 스타일 변경</li>
+        <li>마커 스타일 변경</li>
+    </ul>
+
+    <h2>테이블</h2>
+    <table class="table-col">
+        <tr>
+            <td>이름</td>
+            <td>주소</td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>부산</td>
+        </tr>
+    </table>
+    <table class="table-cell">
+        <tr>
+            <td>책제목</td>
+            <td>저자</td>
+        </tr>
+        <tr>
+            <td>흥부놀부</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
