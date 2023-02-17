@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS위치.css">
+</head>
+<body>
+    <h1>CSS의 위치 속성</h1>
+    <h2>디스플레이 - display</h2>
+    <p class="bg">block속성</p>
+    <a href="" class="bg">인라인속성</a>
+
+    <div class="inline-block bg">인라인블록속성</div>
+    <div class="inline-block bg">인라인블록속성</div>
+    <p>
+        block속성은 width가 부모보다 작아도 그 한 라인을 다 차지한다 <br>
+        inline 속성은 content의 크기에 맞추기 때문에 width, height값이 먹히지 않는다. <br>
+        두 개의 속성을 각각 적용한게 inline-block <br>
+        그래서 block처럼 w/h를 가질 수 있고, inline처럼 요소 옆에 배치 할 수도 있다. - div 태그에서 많이 사용
+    </p>
+
+    <h2>visible</h2>
+    <p class="hidden">숨김</p>
+    <p class="none">없앰</p>
+    <h2 class="opacity">투명도</h2>
+
+    <h2>포지션 - position</h2>
+    <div class="position-s box">정적위치 포지션</div>
+    <div class="position-r box">상대위치 포지션</div>
+    <p>
+        relative 속성은 정적위치에 상대적으로 요소를 움직일 수 있다 <br>
+        부모의 위치를 기준으로 상대적으로 움직인다고 이야기할 수 있다
+    </p>
+    <div class="box-parent">
+        <div class="position-r box">상대위치 포지션</div>
+    </div>
+    <p>
+        relative를 사용할 때 바로 사용을 하게 되면 원래 정적위치에서 사용한 공간만 자리를 차지하고 이동한 공간은 다른 태그가 그대로 있게 된다 <br>
+    </p>
+
+    <div class="box position-f">
+        고정위치
+    </div>
+
+    <div class="box position-a">절대위치</div>
+    <div class="box-parent">
+        <div class="box position-a" style="height:100px; background-color: aquamarine;">절대위치
+            <p>
+                절대 위치는 부모에 구애받지 않고 전체 화면에서 이동 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

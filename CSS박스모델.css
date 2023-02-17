@@ -93,3 +93,9 @@
     padding: 2px;
     border: solid 1px black;
 }
+
+.outline{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: plum;
+}

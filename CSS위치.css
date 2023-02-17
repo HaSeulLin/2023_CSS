@@ -1,0 +1,57 @@
+.bg{
+    background-color: orange;
+}
+
+.inline-block{
+    display: inline-block; /*inline은 무조건 글자content 있는 부분만 생성*/
+    width: 300px;
+    height: 300px; /*남는 흰 공간은 margin이 됨*/
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.none{
+    display: none;
+}
+
+.opacity{
+    background-color: indianred;
+    opacity: 25%; /*단위 0~100% 0~1*/
+}
+
+.box{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: beige;
+}
+
+.position-r{
+    /*상대위치를 쓰겠다 알림*/
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+
+.position-s{
+    /*정적 위치에서는 이동할 수 없다*/
+    position: static;
+}
+
+.box-parent{
+    height: 300px;
+}
+
+.position-f{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.position-a{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
