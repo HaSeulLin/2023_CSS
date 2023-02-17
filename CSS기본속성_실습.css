@@ -1,22 +1,20 @@
-h1{font-family: "Impact";}
+h1{font-family: "Impact"; text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);}
 
 .sitelink{
     width: 250px;
     border: 2px solid yellowgreen;
-    font-weight: bold;
     background-color: rgba(240, 230, 140, 0.541);
 }
 
 ul{list-style-type: circle;}
 
-a{text-decoration-line: none;}
+a{
+    font-weight: bold;
+    text-decoration-line: none;
+}
 
-.sitelink a:link{
-    color: black;
-}
-.sitelink a:visited{
-    color: black;
-}
+.sitelink a:link{color: black;}
+.sitelink a:visited{color: black;}
 .sitelink a:hover{
     color: black;
     font-style: italic;

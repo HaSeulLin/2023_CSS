@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS박스모델.css">
+</head>
+<body>
+    <h1 class="text-size">박스모델</h1>
+    <p class="text-size">크기</p>
+    <p>
+        크기는 font-size 속성으로 변경할 수 있고 기본크기는 p태그의 글자 크기로 동일하다. <br>
+        h1태그의 글자는 이미 200%의 크기로 출력 되어 있으며 <br>
+        동일한 font-size를 넣어주면 다른 글자들도 동일한 크기가 된다.
+    </p>
+    <h2 class="text-em">em 크기</h2>
+    <p class="text-em">크기 확인</p>
+
+    <div class="text-em">
+        div의 글자 크기
+        <p class="text-in-em">안에 있는 글자 크기</p>
+        <p>
+            em의 단위의 경우 부모태그에 em을 사용하고 자식에게도 em을 사용했을 경우 <br>
+            자식 태그는 100% 크기의 기준을 부모의 값으로 삼는다. <br>
+            ex) 부모:3em, 자식:2em >> 자식의 크기는 곱연산 600%
+        </p>
+    </div>
+    <div class="text-rem">
+        div의 글자 크기
+        <p class="text-in-rem">p태그 글자 크기</p>
+    </div>
+    <p>
+        rem의 경우 root(html/body)를 기준으로 글자크기를 작성하기 때문에 자식태그의 rem의 값을 바꾸면 바꾼값 그대로 출력이 된다
+    </p>
+    <h1>크기</h1>
+    <p class="width">p태그의 크기 확인</p>
+    <div class="height-box">
+        <h2 class="height">h2 태그의 높이 크기 확인</h2>
+    </div>
+    <p>
+        font-size를 이용했을 때 기본 크기가 100% <br>
+        width/height 이용 시엔 부모의 크기가 100% 기준 <br>
+        *font-size는 1%~400%이상까지 사용할 수 있지만
+        width/height의 경우는 부모의 크기가 최대이므로 100%까지...? <br>
+        *단위크기의 헷갈림을 막기 위해 font-size에서는 rem 또는 px를 쓰자
+    </p>
+
+    <h2>패딩 padding</h2>
+    <p class="my-p-top my-border">위쪽 패딩이 추가되었습니다 10px</p>
+    <p class="my-p-left my-border">왼쪽 패딩이 추가되었습니다 10px</p>
+    <p class="my-p-y my-border">위 아래 패딩이 추가되었습니다 10px 0px</p>
+    <p class="my-p my-border">모든 패딩이 추가되었습니다 10px 30px</p>
+
+    <h2>테두리 - border</h2>
+    <p class="b-groove">3차원 테두리 위쪽 groove</p>
+    <p class="b-ridge">3차원 테두리 위쪽 ridge</p>
+    <p class="b-inset">3차원 테두리 위쪽 inset</p>
+    <p class="b-outset">3차원 테두리 위쪽 outset</p>
+
+    <p class="b-none">3차원 테두리 없음 none</p>
+    <p class="b-hidden">테두리 숨김</p>
+
+    <h2>마진 - margin</h2>
+    <p class="my-border my-m-t">위쪽 마진입니다.</p>
+    <a href="" class="my-border my-m-l">왼쪽 마진입니다.</a>
+    <a href="" class="my-border my-m-l">왼쪽 마진입니다.</a>
+    <a href="" class="my-border my-m-parent">부모로부터 받은 마진입니다</a>
+    <a href="" class="my-border my-m-auto">a태그 자동 마진입니다</a>
+    <p class="my-border my-m-auto">p태그 자동 마진입니다</p>
+    <p>display가 block이거나 inline 태그에 사용하면 margin auto는 실행되지 않는다</p>
+    <div class="box-parent">
+        <a href="" class="my-border my-m-auto">div 안 a태그 자동 마진</a>
+    </div>
+
+    <h2>html 태그의 전체 크기 구하기</h2>
+    <p style="height: 30px; padding: 10px 0;">안녕하세요</p>
+    <p>
+        <b> 태그의 크기를 구하는 방법</b> <br>
+        height/width : 콘텐츠의 크기 <br>
+        padding : 패딩의 크기 <br>
+        border : 테두리의 크기 <br>
+        margin : 마진의 크기 <br>
+        height/width + padding + border + margin
+    </p>
+    <p class="box-layout">box-size border-box변경</p>
+    <p>
+        box-size를 border-box로 변경을 하고 작성하면
+        heigh/width의 값이 border+padding+conter값으로 바뀐다 <br>
+        크기값이 중요한 경우에는 border-box로 바꿔서 작성 <br>
+        크기 계산이 편하기 때문
+    </p>
+</body>
+</html>
