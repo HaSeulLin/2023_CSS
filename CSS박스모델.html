@@ -69,7 +69,7 @@
     <a href="" class="my-border my-m-parent">부모로부터 받은 마진입니다</a>
     <a href="" class="my-border my-m-auto">a태그 자동 마진입니다</a>
     <p class="my-border my-m-auto">p태그 자동 마진입니다</p>
-    <p>display가 block이거나 inline 태그에 사용하면 margin auto는 실행되지 않는다</p>
+    <p>display가 inline인 태그에 사용하면 margin auto는 실행되지 않는다</p>
     <div class="box-parent">
         <a href="" class="my-border my-m-auto">div 안 a태그 자동 마진</a>
     </div>
@@ -90,6 +90,14 @@
         heigh/width의 값이 border+padding+conter값으로 바뀐다 <br>
         크기값이 중요한 경우에는 border-box로 바꿔서 작성 <br>
         크기 계산이 편하기 때문
+    </p>
+
+    <h2>마진값 - auto</h2>
+    <div class="my-border my-m-auto" style="width: 300px">margin 속성값 auto</div>
+    <p>
+        margin속성값 auto값을 사용할 때는 display가 block 속성이어야 함 <br>
+        contet 크기가 부모보다 작아야 한다 (부모크기와 같으면 마진이 들어갈 공간이 없다) <br>
+        margin-auto를 사용하면 부모의 크기 기준으로 중앙으로 정렬된다
     </p>
 </body>
 </html>
