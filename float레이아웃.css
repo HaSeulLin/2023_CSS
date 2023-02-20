@@ -1,0 +1,35 @@
+.float-left{
+    float: left;
+}
+
+.float-clear{
+    clear: both;
+}
+
+.header{
+    background-color: coral;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+.nav{
+    background-color: yellowgreen;
+    text-align: center;
+    margin: 5px 0;
+}
+.main{
+    background-color: burlywood;
+    height: 200px;
+    padding: 5px
+}
+.section1, .section2{
+    background-color: azure;
+    height: 100px;
+}
+.section1{
+    float: left;
+    width: 100px;
+}
+.section2{
+    margin-left: 105px;
+}

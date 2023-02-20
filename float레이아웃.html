@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./float레이아웃.css">
+</head>
+<body>
+    <h1>float를 이용한 레이아웃</h1>
+    <img class="float-left" src="./img/hand.png" alt="hand" width="300px">
+    <p>손입니다</p>
+    <p>float를 이용하여 영향을 받는 태그입니다</p>
+    <p>
+        float 속성의 특징 <br>
+        주변 태그들이 float 속성이 들어간 태그와 어울리도록 위치가 바뀐다 <br>
+        float:left를 넣었을 때, 들어간 요소는 왼쪽 <br>
+        어울리는 요소는 오른쪽에 배치가 된다
+    </p>
+    <p class="float-clear">float 영향을 받지 않는 태그</p>
+    <p>
+        float는 형제태그에 영향을 주기 때문에 그 영향에서 벗어나기 위해서는 clear:both를 사용한다
+    </p>
+    <h2>div/의미태그와 float를 이용한 레이아웃</h2>
+    <header class="header">제목작성</header>
+    <nav class="nav">네브 링크 작성</nav>
+    <main class="main">
+        <section class="section1">내용1</section>
+        <section class="section2">내용2</section>
+        <p>
+            float로 레이아웃 작성 <br>
+            float 속성이 들어가는 요소에만 width크기 지정 <br>
+            주변 요소의 크기는 자동으로 들어감 <br>
+            주변 요소의 간격을 띄울때는 margin을 사용한다
+        </p>
+    </main>
+    <footer>푸터입니다</footer>
+</body>
+</html>
