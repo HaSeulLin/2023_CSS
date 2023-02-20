@@ -1,0 +1,64 @@
+.fixed{
+    border: 2px solid black;
+    width: 150px;
+    height: 100px;
+    background-color: darkgoldenrod;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 10px;
+}
+.p-box{
+    position: absolute;
+    left: 30%;
+}
+.toup, .todown{
+    text-decoration: none;
+    color: black;
+}
+.p-box a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.fixed-bookmark{
+    background-color: burlywood;
+    border: 3px solid black;
+    width: 150px;
+    padding: 0 10px;
+    position: fixed;
+    right: 0;
+    top: 300px;
+}
+.ul-bookmark{
+    list-style: none;
+}
+.fixed-bookmark ul a{
+    text-decoration: none;
+    color: black;
+}
+.fixed-bookmark ul a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+.div-sty{
+    background-color: rgb(250, 250, 183);
+    padding:10px;
+}
+
+.ul-sty{
+    background-color: rgb(82, 103, 109);
+    padding: 20px 0;
+    width: 320px;
+    overflow: auto;
+    list-style: none;
+}
+.ul-sty li{
+    float: left;
+    margin: 0 20px;
+}
+.ul-sty a:hover{
+    color: white;
+}

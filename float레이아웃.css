@@ -8,9 +8,6 @@
 
 .header{
     background-color: coral;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 2rem;
 }
 .nav{
     background-color: yellowgreen;
@@ -20,7 +17,9 @@
 .main{
     background-color: burlywood;
     height: 200px;
-    padding: 5px
+    padding: 10px;
+    overflow: auto;
+    /*height 지정한 곳에서는 scroll이 생긴다*/
 }
 .section1, .section2{
     background-color: azure;
@@ -31,5 +30,49 @@
     width: 100px;
 }
 .section2{
-    margin-left: 105px;
+    margin-left: 110px;
+}
+
+.header-border{
+    border: yellow solid 3px;
+    text-align: center;
+}
+.nav-border{
+    border: magenta 3px solid;
+    float: left;
+    width: 150px;
+}
+.nav-s{
+    text-align: center;
+}
+.section-border{
+    border: 3px solid skyblue;
+    margin-left: 156px;
+}
+.sec-s{
+    text-align: center;
+}
+.footer-border{
+    border: 3px solid greenyellow;
+    text-align: center;
+}
+
+.float-right{
+    float: right;
+}
+
+
+.align-margin{
+    width: 150px;
+    margin: auto;
+}
+
+.align-position{
+    position: absolute;
+    left: 40%;
+}
+
+.container{
+    background-color: yellow;
+    overflow: auto;
 }
