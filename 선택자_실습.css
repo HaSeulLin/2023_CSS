@@ -1,0 +1,21 @@
+.div-sel{
+    border: red 3px solid;
+    margin: 20px 0;
+}
+.div-sel li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.spand{
+    position: fixed;
+    right: 0;
+}
+.spand>span{
+    background-color: blue;
+    color: white;
+    border-radius: 20px 20px;
+    margin: 10px ;
+    padding: 5px 10px;
+}

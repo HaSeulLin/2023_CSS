@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./선택자.css">
+</head>
+<body>
+    <h1>CSS 선택자</h1>
+    <p>
+        각각의 태그에 하나의 선택자, 하나의 클래스로 접근하는데 한계가 있음 <br>
+        두 개 이상의 선택자를 사용해서 원하는 태그에 접근
+    </p>
+    <h2>결합 선택자</h2>
+    <h3>자손 선택자</h3>
+    <div class="outbox">
+        <p>div outbox의 자식인 p태그</p>
+        <div class="inbox">
+            <p>div outbox의 자손인 p태그</p>
+        </div>
+        <p>div outbox의 자식인 p태그</p>
+    </div>
+
+    <h3>동위/형제 선택자</h3>
+    <div>
+        <p class="sibling">p 형제를 선택합니다</p>
+        <p>p의 p태그 형제</p>
+        <a href="">p의 a태그 형제</a>
+        <p>p의 p태그 형제</p>
+        <p class="test">p의 class이름 test의 형제</p>
+    </div>
+    <div>
+        <p>부모가 다르기 때문에 형제가 아니다</p>
+    </div>
+    <p>
+        부모, 자식, 형제 관계를 통해서 태그에 접근할 수 있다. <br>
+        이때, 더 좁은 범위의 css가 적용이 되게 된다 <br>
+        .test: 모든 test클래스를 가진 태그 <br>
+        .sibling~p: 모든 sibling 크래스를 가진 태그의 형제 중 p 태그 <br>
+        아래의 경우가 더 좁다 <br>
+    </p>
+    <h2>의사 클래스</h2>
+    <h3>동적 의사클래스</h3>
+    <p>
+        :link, :visited, :hover, :active, :focus
+        와 같은 상태에 따른 css 디자인을 따로 넣어줄 수 있다
+    </p>
+    <label for="">아래 input 태그에 포커스를 주면 백그라운드 색이 바뀐다</label> <br>
+    <input class="input-focus" type="text" class="type">
+    <p>input 태그에 포커스를 주면 p태그의 글자색이 바뀝니다</p>
+
+    <h3>상태 의사 클래스</h3>
+    <div class="state">
+        <input type="checkbox" name="" id="" checked>
+        <span>위 내용을 숙지하셨습니까?</span> <br>
+        <input type="checkbox" name="" id="">
+        <span>한번 더 확인해주세요</span>
+    </div>
+    <div class="state">
+        <input type="checkbox" name="" id="" disabled>
+        <span>확인</span>
+    </div>
+    <p>
+        클래스 이름은 필요에 따라서 사용할 수 있고
+        동일한 디자인을 계속 쓰고 싶다면 같은 클래스를 사용한다
+    </p>
+    <h3>구조 의사 클래스</h3>
+    <ul class="menu-list">
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        <li>네번째</li>
+    </ul>
+    <p>
+        리스트나 테이블과 같이 자식을 자기는 태그에서 특정 자식을 선택해야할 때 사용한다 <br>
+        :nth-child(2) : 2번째 자식 태그에 디자인 적용 <br>
+        :nth-child(2n) : 2xn번째. 짝수 태그에 디자인 적용 <br>
+    </p>
+
+    <p>짝수번째 색상이 노란색인 테이블을 작성</p>
+    <p>border-collapse 사용 후 tr background</p>
+    <table class="table-color">
+        <tr>
+            <td>첫번째</td>
+        </tr>
+        <tr>
+            <td>두번째</td>
+        </tr>
+        <tr>
+            <td>세번째</td>
+        </tr>
+        <tr>
+            <td>네번째</td>
+        </tr>
+    </table>
+
+    <h3>of-type</h3>
+    <p>속성 중에서 순서를 찾아서 작성</p>
+    <div class="child-tag">
+        <p>div의 자식</p>
+        <h1>div의 자식</h1>
+        <h2>div의 자식</h2>
+    </div>
+
+    <div class="of-type">
+        <p>각 부모의 최초의 요소에 디자인이 들어간다</p>
+        <p>두번째 요소부터는 들어가지 않는다</p>
+        <div>
+            <p>최초의 요소</p>
+        </div>
+    </div>
+</body>
+</html>

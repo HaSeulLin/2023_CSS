@@ -1,0 +1,76 @@
+.outbox p{
+    background-color: yellow;
+}
+.outbox>p{
+    background-color: blue;
+}
+.inbox{
+    background-color: blue;
+}
+
+.sibling~p{
+    background-color: darkgray;
+}
+/* +를 사용할 때는 바로 뒤에 있는 태그만 찾을 수 있다 */
+.sibling~a{
+    background-color: aliceblue;
+}
+.sibling+p{
+    background-color: aliceblue;
+}
+.sibling~.test{
+    background-color: brown;
+}
+
+.input-focus:focus{
+    background-color: coral;
+    color: blueviolet;
+}
+.input-focus:focus+p{
+    background-color: coral;
+    color: blueviolet;
+}
+.state>input:checked+span{
+    color: gainsboro;
+}
+.state>input:disabled+span{
+    text-decoration: line-through 1px solid;
+}
+
+.menu-list>li:first-child{
+    background-color: cornflowerblue;
+} /*li 태그 내에서 첫번째 자식 찾음*/
+.menu-list>li:last-child{
+    background-color: aquamarine;
+}
+.menu-list>li:nth-child(2n){
+    color: red;
+}/*2n:짝수. 2의배수*/
+
+.table-color{
+    border-collapse: collapse;
+}
+/*자손 사용*/
+.table-color tr:nth-child(2n-1){
+    background-color: aqua;
+}
+/*자식이므로 tbody 중간 다리가 필요*/
+.table-color>tbody>tr:nth-child(2n){
+    background-color: yellow;
+}
+
+.child-tag>p:first-child{
+    color: blue;
+}
+.child-tag>h1{
+    color: brown;
+}
+/*클래스를 지정하고 자손으로 타입찾기*/
+.of-type p:first-of-type{
+    color: red;
+}
+/*클래스를 지정하고 자식으로 타입찾기
+fist-child와 동일한 역할*/
+.of-type>p:first-of-type{
+    background-color: beige;
+}
