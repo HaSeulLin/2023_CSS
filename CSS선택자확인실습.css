@@ -1,0 +1,65 @@
+body{
+    padding:0;
+    margin: 0;
+}
+
+/* header */
+header{
+    background-color: aqua;
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+/* nav - 메뉴 */
+nav{
+    background-color: aquamarine;
+    margin: 0;
+    padding: 10px 0 30px 0;
+}
+nav>ul{
+    margin: 0;
+    list-style: none;
+}
+nav>ul>li{
+/*    display: inline-block; 로도 된?*/
+    float: left;
+    margin: 0 5px;
+    border-right: solid black 2px;
+    padding: 0 10px;
+}
+nav>ul>li:last-child{
+    border:none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* main */
+main{
+    background-color: darkseagreen;
+    padding: 5px;
+    width: 800px;
+    margin: auto;
+    /*최소값 지정해주면 컨텐츠의 내용이 없을 때 크기가 되고
+    height의 크기는 기본적으로 auto라 컨텐츠 내용이 많으면 자동으로 늘어난다*/
+    min-height: 500px;
+}
+
+/* footer */
+footer{
+    height: 50px;
+    background-color: darkcyan;
+}
+
+.sticker{
+    background-color: gold;
+    border-radius: 50%;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    top:0;
+}

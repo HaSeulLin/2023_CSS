@@ -1,0 +1,106 @@
+@import url(./선택자.css);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Noto+Sans+KR:wght@100;900&family=Noto+Serif+KR:wght@200;900&display=swap');
+
+input[type="button"]{
+    background-image: url(./img/wand-magic-sparkles-solid.svg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font{
+    font-family: 'Noto Serif KR';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.font2{
+    font-family: 'Cinzel', serif;
+}
+
+.gradient{
+    height: 50px;
+    background: -webkit-linear-gradient(right, green, yellow, white);
+}
+.gradient2{
+    height: 50px;
+    background: -webkit-linear-gradient(70deg, rgba(0,225,0, 0.5), yellow, white);
+}
+body{
+    background: -webkit-linear-gradient(270deg, rgba(0,0,0,0.5),rgba(255,255,100,0.5));
+}
+.gradient-circle{
+    width: 150px;
+    height: 150px;
+    background: -webkit-radial-gradient(red 30%, rgba(0,0,255,0) 50%);
+    background: -webkit-radial-gradient(closest-side, red, orange, yellow, green, blue,indigo, purple);
+}
+.box-shadow{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    box-shadow: -3px 3px 2px;
+}
+
+.background{
+    background-image: url(./img/wand-magic-sparkles-solid.svg), url(./img/bird.png);
+    height: 300px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.background2{
+    width: 600px;
+    height: 300px;
+    border: white 10px solid;
+    padding: 30px;
+    background-image: url(./img/wand-magic-sparkles-solid.svg);
+    background-origin: content-box; /*border-box, padding-box*/
+    background-clip: content-box;
+}
+.background3{
+    background-image: url(https://cdn.pixabay.com/photo/2015/02/06/19/57/valentine-candy-626446_960_720.jpg);
+    font-size: 3rem;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.border-image{
+    width: 200px;
+    border: 36px solid orange;
+    margin: 30px;
+    padding: 10px;
+    border-image: url(./img/border.png) 30 round;
+}
+
+.text{
+    background-color: yellowgreen;
+    height: 70px;
+    word-break: keep-all; /*break-all: 글자 자르기
+    각 콘텐츠의 값이 넘쳤을 때 어떻게 보일지*/
+    overflow: hidden;
+    /* 글자가 자동줄바꿈이 있는지 확인*/
+    white-space: nowrap;
+    /* 글자가 그 크기를 넘어갔을 때 모습 정함*/
+    text-overflow: ellipsis;
+}
+.text-kr{
+    background-color: aquamarine;
+    width: 200px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
