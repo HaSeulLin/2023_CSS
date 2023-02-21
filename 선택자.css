@@ -74,3 +74,59 @@ fist-child와 동일한 역할*/
 .of-type>p:first-of-type{
     background-color: beige;
 }
+
+.first-letter:hover:first-letter{
+    color: blue;
+    font-size: 1.5rem;
+} /*콜론이 :: 두 개일 경우 사이에 hover, checked등 상태조건 넣을 수 있다*/
+.first-line::first-line{
+    color: blue;
+    background-color: azure;
+}
+
+.before::before{
+    /*content로 내용추가: 글자, url을 통해 이미지 추가*/
+    /*이미지 크기 수정 어려움(고정) > 크기 수정이 가능한 background-image로 추가*/
+    content: "";
+    background-image: url(./img/bird.png); 
+    background-size: cover;
+    display: inline-block; /*inline-block으로 크기조절?*/
+    width: 30px;
+    height: 30px;
+}
+.before-color::before{
+    clear:both;
+    content: "";
+    background-color: brown;
+    /*content에글자가없을때,inline-block에크기줘서표기가능*/
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.after::after{
+    content: "추가";
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 20px;
+}
+.after-color:hover:after{
+    content: "추가된 글자";
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+    background-color: black;
+    position:absolute;
+    left: 0;
+}
+.attr>input[type="checkbox"]:checked+span{
+    color: crimson;
+}
+.attr>input[type="radio"][name="group"]:checked+span{
+    text-decoration: underline wavy blue;
+}
+.attr>input[type="button"]:active{
+    color: white;
+    background-color: blueviolet;
+}
