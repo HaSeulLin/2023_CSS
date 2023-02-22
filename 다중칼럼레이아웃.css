@@ -1,0 +1,13 @@
+.col{
+    min-height: 200px;
+    background-color: beige;
+    column-count: 3;
+    column-rule: dotted burlywood 2px;
+    column-gap: 30px;
+    padding: 10px;
+    column-fill: balance;
+}
+.span-all{
+    column-span: all;
+    background-color: aquamarine;
+}

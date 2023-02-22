@@ -1,0 +1,29 @@
+.flex-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-box-height{
+    display: flex;
+    height: 150px;
+    background-color: darkcyan;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box-height>p{
+    padding: 5px;
+    background-color: dimgray;
+}
+.flex-box-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.flex-box-height-wrap{
+    display: flex;
+    min-height: 150px;
+    background-color: burlywood;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
