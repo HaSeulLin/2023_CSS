@@ -212,3 +212,60 @@ input[type=checkbox]+span{
     padding-top: 45px;
     z-index: 10;
 }
+
+.filter{
+    width: 300px;
+}
+.filter:hover{
+    filter: blur(5px) brightness(1.2);
+    transition: all 1s;
+}
+
+.image-list>.content-img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+.image-list>.content-img:nth-child(1) {
+    background-image: url(./img/border.png);
+    transition: all 1s;
+}
+.image-list>.content-img:hover:nth-child(1) {
+    background-image: url(./img/border.png);
+    filter: invert();
+    transition: all 1s;
+}
+.image-list>.content-img:nth-child(2) {
+    background-image: url(./img/leaf.jpg);
+    filter: grayscale(70%);
+}
+.image-list>.content-img:nth-child(3) {
+    background-image: url(./img/maltese.jpg);
+    filter:contrast(50%);
+}
+
+.pencle{
+    background-image: url(./img/wand-magic-sparkles-solid.svg);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    animation: vibration 1s infinite;
+}
+@keyframes vibration{
+    0%{ transform:rotate(0deg);}
+    15%{ transform:rotate(10deg);}
+    35%{ transform:rotate(-10deg);}
+    75%{ transform:rotate(0deg);}
+    100%{ transform:rotate(0deg);}
+}
+
+.mix-blend{
+    position: fixed;
+    top: 0;
+    color: white;
+    mix-blend-mode: difference;
+}
+body{
+    background-color: white;
+}
