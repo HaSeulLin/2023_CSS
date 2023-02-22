@@ -137,3 +137,78 @@ input[type=checkbox]+span{
     opacity: 1;
     transition: all 1s;
 }
+
+.animation{
+    animation-name: movingback;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving {
+    from { transform: translate(0,0);}
+    to { transform: translate(100px,0);}
+}
+@keyframes movingback {
+    0% { transform: translate(0,0);}
+    50% { transform: translate(100px,0);}
+    100% { transform: translate(0,0); -webkit-transform: translate(0,0); -moz-transform: translate(0,0); -ms-transform: translate(0,0); -o-transform: translate(0,0); }
+}
+.wrap{
+    overflow: hidden;
+}
+
+.animation-box{
+    border-radius: 0;
+    background-color: orange;
+    animation: movingbox 4s infinite;
+}
+@keyframes movingbox {
+    0% {}
+    20% {
+        transform: rotate(90deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        background-color: orangered;
+}
+    40% {
+        transform: rotate(180deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        background-color: orangered;
+}
+    60% {
+        transform: rotate(270deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 50%;
+        background-color: orangered;
+}
+    80% {
+        transform: rotate(360deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-color: orangered;
+}
+    100% {
+        transform: rotate(360deg);
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+}
+.text{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    padding-top: 45px;
+    z-index: 10;
+}
