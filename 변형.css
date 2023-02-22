@@ -1,0 +1,139 @@
+.my-box{
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+.trans{
+    transform: translate(-10px, 10px);
+}
+.rotate{
+    transform: rotate(30deg);
+}
+.transform{
+    transform: translate(100px, 0) scale(0.8)
+    skewX(20deg);
+}
+.transform-3d{
+    transform: rotateX(60deg) rotateY(30deg) translate3d(0,0,-20px);
+}
+
+/*전환이 될 방법을 알려줘야한다 ex hover*/
+.transition:hover{
+    background-color: red;
+    transition: background-color 1s ;
+}
+.transition{
+    transition: background-color 0.5s ;
+}
+.transform-transition:hover{
+    transform: translate(100px,0) rotate(90deg);
+    transition: all 1s;
+    width: 200px;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;
+}
+.transform-transition{
+    transition: transform 1s, width 1s;
+}
+.linear-transition:hover{
+    transition-timing-function: linear;
+    transform: rotate(90deg);
+    transition:all 1s;
+}
+
+/* 전환 효과 연습*/
+input[type=checkbox]:checked+span{
+    color: blue;
+    transition: color 1s;
+}
+input[type=checkbox]+span{
+    transition: color 1s;
+}
+.after-transition>p:hover:after{
+    content: "새로운 내용이 나타납니다";
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition-timing-function: linear;
+    transition: opacity 1s;
+}
+.after-transition>p::after{
+    content: "새로운 내용이 나타납니다";
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.content-container{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    overflow: hidden;
+}
+.content-container>.img{
+    background-image: url(./img/bird.png);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+.content-container>.img:hover{
+    background-image: url(./img/bird.png);
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.content-container2{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-color: black;
+    display: inline-block;
+}
+.content-container2>.img{
+    background-image: url(./img/leaf.jpg);
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s;
+}
+.content-container2>.img:hover{
+    background-image: url(./img/leaf.jpg);
+    opacity: 0.8;
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.content-container>.img2{
+    background-image: url(./img/leaf.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.content-container>.black{
+    position: absolute;
+    color: white;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding-top: 140px; /*글자높이중앙*/
+
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+
+    transition: all 1s;
+}
+.content-container>.black:hover{
+    opacity: 1;
+    transition: all 1s;
+}

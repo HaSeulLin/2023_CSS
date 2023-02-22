@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./변형.css">
+</head>
+<body>
+    <h1>2d Transform</h1>
+    <p>
+        요소들을 이동하거나 회전할 수 있다 
+        (position과는 별개)
+    </p>
+    <div class="my-box">
+        아무것도 적용되지 않은 박스
+    </div>
+    <div class="my-box trans">
+        x, y축으로 이동합니다
+    </div>
+    <div class="my-box rotate">
+        회전합니다
+    </div>
+    <div class="my-box transform">
+        여러 변형을 함께 사용합니다
+    </div>
+    <div class="my-box transform-3d">
+        3차원으로 이동 및 회전합니다
+    </div>
+
+    <h1>transition - 전환</h1>
+    <div class="my-box transition"></div>
+    <p>
+        전환을 사용할 때는 전환이 되기 전 디자인과 전환이 된 후의 디자인 두 개가 필요하다 <br>
+        전환이 되기 위한 조건 (hover, check 등)이 맞으면 전환되는 모습을 보여준다 <br>
+        차후에는 JS를 이용해서도 줄 수 있다
+    </p>
+    <div class="my-box transform-transition"></div>
+    <p>
+        전환을 할 때, 여러 속성 이름으로 전환을 할 수 있다 <br>
+        전환을 추가할 때 ,를 통해 속성 이름과 시간 추가 가능 <br>
+        수정한 모든 값을 전환으로 쓸 때는 all을 사용하면 된다
+    </p>
+
+    <div class="my-box linear-transition"></div>
+
+    <h1>전환 효과 연습</h1>
+    <p>아래 태그들에게 전환효과를 넣으세요</p>
+    <div>
+        <input type="checkbox">
+        <span>체크가 되면 글자색이 파랗게 전환</span>
+    </div>
+    <div class="after-transition">
+        <p>
+            after를 이용해서 마우스를 올리면(opacity)
+            배경색이 검정으로 바뀌고 다른 글자가 나오게 전환
+        </p>
+    </div>
+    <p>
+        전환 효과를 주기 전에, 해당 태그에 전환 했을 때 디자인이 들어가 있는지를 확인한 후,
+        전환 효과를 주면 빠지는 내용없이 확인하기 쉽다 <br>
+        선택자 after의 경우 새로운 내용을 추가하는 선택자 <br>
+        ::after의 값과 :hover:after의 값을 주어야 전환 가능
+    </p>
+
+    <h2>이미지에 마우스를 올렸을 때 이미지 확대</h2>
+    <div class="content-container">
+        <div class="img"></div>
+    </div>
+    <h2>이미지에 마우스를 올렸을 때 이미지 확대</h2>
+    <p>2개의 div가 같은 라인에서 나오도록</p>
+    <div class="content-container2">
+        <div class="img"></div>
+    </div>
+    <div class="content-container2">
+        <div class="img"></div>
+    </div>
+
+    <div class="content-container">
+        <div class="black">새 이미지입니다</div>
+        <div class="img2"></div>
+    </div>
+</body>
+</html>
