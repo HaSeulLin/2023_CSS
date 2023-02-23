@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid레이아웃.css">
+</head>
+<body>
+    <h1>grid레이아웃</h1>
+    <div class="grid-box">
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템4</p>
+        <p>아이템5</p>
+        <p>아이템6</p>
+        <p>아이템7</p>
+        <p>아이템8</p>
+    </div>
+
+    <h2>row를 기준으로 나누는 grid</h2>
+    <div class="grid-box-row">
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템4</p>
+        <p>아이템5</p>
+    </div>
+    <p>
+        grid-template에서 사용하는 fr단위는 배율 단위 <br>
+        아이템의 크기에 맞춰서 작성한 배율로 나눠준다
+    </p>
+
+    <h2>그리드 안의 그리드 크기 합치기</h2>
+    <div class="grid-box-item">
+        <p>아이템1</p>
+        <p>아이템2</p>
+        <p>아이템3</p>
+        <p>아이템4</p>
+        <p>아이템5</p>
+    </div>
+    <p>
+        그리드를 합치거나, 이동하기 위해서
+        grid-column과 grid-row를 사용하여 작성할 수 있다 <br>
+        기본적으로 row의 크기는 auto로 아이템의 크기에 맞춰 있고
+        auto의 크기를 바꿔서 사용할 수 있다
+    </p>
+
+    <h2>그리드 레이아웃 실습</h2>
+    <div class="naver-grid-box">
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>내용1</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템2</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템3</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템4</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템5</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템6</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템7</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템8</p>
+        </div>
+        <div class="content">
+            <div class="item-image"></div>
+            <h4>제목</h4>
+            <p>아이템8</p>
+        </div>
+    </div>
+</body>
+</html>

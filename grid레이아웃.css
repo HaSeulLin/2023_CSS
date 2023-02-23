@@ -1,0 +1,80 @@
+.grid-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr; /*px도 가능*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.grid-box>p:first-child{background-color: aqua;}
+.grid-box>p{background-color: cadetblue;}
+
+.grid-box-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 2fr; /*row는 columns 있어야 적용(아니면n줄)*/
+    /*row을 작성할 때는 높이간격을 따로 주고 싶을 때 작성*/
+    border: 1px solid seagreen;
+}
+.grid-box-row>p{border: 1px solid salmon;}
+.grid-box-row>p:first-child{
+    padding: 30px 0;
+}
+.grid-box-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    /*
+        template: 갯수만큼 크기 지정(그외의 크기는 auto)
+        auto: 모든 row의 오토를 어떻게 할지 지정
+    */
+}
+.grid-box-item>p:nth-child(1){
+    grid-column:1/4;
+    border: 1px solid salmon;
+}
+.grid-box-item>p:nth-child(2){
+    grid-row:2/4;
+    border: 1px solid salmon;
+}
+.grid-box-item>p:nth-child(3){
+    grid-column:2/4;
+    grid-row: 2/4;
+    border: 1px solid salmon;
+}
+.grid-box-item>p:nth-child(4){
+    grid-column:2/4;
+    border: 1px solid salmon;
+}
+.grid-box-item>p:nth-child(5){
+    grid-column: 1;
+    grid-row: 4;
+    border: 1px solid salmon;
+}
+
+/* grid 실습 */
+*{
+    margin: 0;
+    padding: 0;
+}
+.naver-grid-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    width: 500px;
+}
+.naver-grid-box>.content{
+    text-align: center;
+}
+.naver-grid-box>.content>p{
+    margin: 0; padding: 0;
+}
+.naver-grid-box>.content>.item-image{
+    background-image: url(./img/maltese.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 200px;
+}
+.naver-grid-box>.content:hover>.item-image{
+    filter: brightness(0.5);
+    transition: all 0.5s;
+}

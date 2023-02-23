@@ -27,3 +27,67 @@
     justify-content: space-around;
     align-content: space-around;
 }
+
+.flex-box-item{
+    background-color: cornsilk;
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+.flex-box-item>p:nth-child(1){
+    align-self: center;
+}
+.flex-box-item>p:nth-child(2){
+    align-self: flex-end;
+}
+.flex-box-item>p:nth-child(3){
+    align-self: auto;
+}
+
+/**/
+.flex-box-bar{
+    border: red solid 3px;
+    height: 120px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    /*각각의 요소들의 크기가 다르므로 움직일 수 있는 높이 있음*/
+    align-items: center;
+}
+.flex-box-bar>div{
+    margin: 10px;
+}
+.logo{
+    border: solid blue 2px;
+    background-image: url(./img/wand-magic-sparkles-solid.svg);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+.flex-box-menu{
+    border: solid blue 2px;
+    padding: 0;
+    height: 100px;
+    /*아이템은 content 크기만 갖기에 너비 지정*/
+    width: 70%;
+}
+.flex-box-menu>ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+}
+.flex-box-menu>ul>li{
+    border: green solid 1px;
+    padding: 10px;
+    margin: 0 10px;
+}
+.laug{
+    border: solid blue 2px;
+    width: 104px;
+    height: 104px;
+    box-sizing: border-box;
+    padding-top: 35px;
+    text-align: center;
+}
