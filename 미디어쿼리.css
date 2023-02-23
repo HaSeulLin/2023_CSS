@@ -1,0 +1,31 @@
+body{
+    background-color: darkorange;
+}
+.grid-box-media{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.grid-box-media>.content{
+    margin: 10px;
+    min-height: 300px;
+    background-color: aliceblue;
+}
+/*미디어쿼리를 사용할 때, pc보다 작은 디자인을 적용할 때
+max-width가 480px: 480px보다 작을 때 적용*/
+@media screen and (max-width:480px){
+    body{
+        background-color: lightblue;
+    }
+    .grid-box-media{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*가운데 크기를 작성해 줄때는 min/max를 둘 다 사용해서 and로 연결한다*/
+@media screen and (min-width:481px) and (max-width:767px) {   
+    body{
+        background-color: gold;}
+    .grid-box-media{
+        grid-template-columns: 1fr 1fr;
+    }
+}
