@@ -2,5 +2,73 @@ body{
     margin: 0; padding: 0;
 }
 .wrap{
-    
+    width: 1000px;
+    font-size: 2rem;
+    overflow: auto;
+    text-align: center;
+    margin: auto;
+}
+.header{
+    height: 150px;
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: orangered;
+}
+.nav{
+    width: 1000px;
+    background-color: chocolate;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.main{
+    overflow: auto;
+    height: 500px;
+}
+.main>.aside{
+    background-color: coral;
+    float: left;
+    width: 300px;    height: 100%;
+}
+.m-l{margin-left: 300px;}
+.main>.contents1{
+    background-color: orange;
+    height: 50%;
+}
+.main>.contents2{
+    background-color: gold;
+    height: 50%;
+}
+
+.main2{
+    margin-top: 5px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: 1fr;
+}
+.main2>.aside{
+    background-color: darkorange;
+    width: 300px;    height: 300px;
+    box-sizing: border-box;
+    padding: 120px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.main2>.contents1{
+    background-color: orange;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.main2>.contents2{
+    background-color: gold;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.footer{
+    background-color: lightsalmon;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 50px;
 }
