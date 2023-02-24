@@ -1,0 +1,65 @@
+/*레이아웃1*/
+body{margin: 0; padding:0;}
+.wrap{
+    width: 800px;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+/*header*/
+.header{
+    width: 800px;
+    height: 150px;
+    background-color: darkgreen;
+    font-size: 3rem;
+    /*텍스트 줄간격 조정해서 글자 위치 수정*/
+    line-height: 140px; 
+}
+/*nav*/
+.nav{
+    background-color: darkcyan;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 23px 0;
+}
+/*main*/
+.main-float{
+    overflow: auto;
+}
+.main-float>.aside{
+    float: left;
+    background-color: cadetblue;
+    width: 200px;    height: 400px;
+    box-sizing: border-box;
+    padding: 180px 0;
+}
+.main-float>.contents{
+    background-color: darkseagreen;
+    margin-left: 200px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 180px 0;
+}
+.main-grid{
+    clear: both; /*float 앞에 사용해서 초기화 해야*/
+    display: grid;
+    grid-template-columns: 200px 600px;
+    height: 300px;
+}
+.main-grid>.aside{
+    background-color: darkseagreen;
+    box-sizing: border-box;
+    padding: 130px 0;
+}
+.main-grid>.contents{
+    background-color: cadetblue;
+    box-sizing: border-box;
+    padding: 130px 0;
+}
+/*footer*/
+.footer{
+    background-color: lightseagreen;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 23px 0;
+}

@@ -1,0 +1,140 @@
+body{
+    background-color: lavender;
+    margin: 0; padding: 0;
+    color: white;
+}
+/* float:left + grid 사용 */
+.wrap{
+    width: 800px;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+    overflow: auto;
+}
+.wrap>.aside{
+    background-color: rebeccapurple;
+    float: left;
+    width: 250px;
+    height: 800px;
+    box-sizing: border-box;
+    padding: 380px 0;
+}
+.wrap>.right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    height: 800px;
+}
+.wrap>.right>.header{
+    background-color: darkviolet;
+    grid-row: 1;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+.wrap>.right>.contents{
+    background-color: blueviolet;
+    grid-row: 2;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+.wrap>.right>.footer{
+    background-color: mediumpurple;
+    grid-row: 3;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+
+
+/* grid only */
+.wrap2{
+    clear: both;
+    width: 800px;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+}
+.wrap2>.aside{
+    background-color: rebeccapurple;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    box-sizing: border-box;
+    padding: 380px 0;
+}
+.wrap2>.header{
+    background-color: darkviolet;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+.wrap2>.contents{
+    background-color: blueviolet;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+.wrap2>.footer{
+    background-color: mediumpurple;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+
+
+/* float only */
+/* 하나의 크기가 고정되고 나머지가 유동적일 때 사용*/
+.wrap3{
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+    overflow: auto;
+}
+.wrap3>.right{
+    height: 900px;
+    margin-left: 250px;
+}
+.wrap3>.aside{
+    background-color: rebeccapurple;
+    width: 250px;    height: 900px;
+    float: left;
+}
+.wrap3>.right>.header{
+    background-color: darkviolet;
+    height: 300px;
+}
+.wrap3>.right>.contents{
+    background-color: blueviolet;
+    height: 300px;
+}
+.wrap3>.right>.footer{
+    background-color: mediumpurple;
+    height: 300px;
+}
+
+/* float 2 */
+/* 두개의 내용에 각각 float를 사용해서 크기를 고정 */
+.wrap4>.aside{
+    background-color: rebeccapurple;
+    width: 300px;    height: 500px;
+    float: left;
+}
+.wrap4>.right{
+    float: left;
+    width: 500px;
+}
+.wrap4>.right>.header{
+    background-color: darkviolet;
+}
+.wrap4>.right>.contents{
+    background-color: blueviolet;
+}
+.wrap4>.right>.footer{
+    background-color: mediumpurple;
+}

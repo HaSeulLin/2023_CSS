@@ -1,0 +1,83 @@
+/*레이아웃2*/
+body{margin: 0; padding:0;}
+.wrap{
+    width: 800px;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+/*header*/
+.header{
+    width: 800px;
+    height: 150px;
+    background-color: blue;
+    font-size: 3rem;
+    line-height: 140px; 
+}
+/*nav*/
+.nav{
+    background-color: cornflowerblue;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 23px 0;
+}
+/*main float*/
+.main-float{
+    overflow: auto;
+    height: 500px;
+}
+.main-float>.aside-l{
+    float:left;
+    width: 200px; height: 500px;
+    background-color: dodgerblue;
+    box-sizing: border-box;
+    padding-top: 200px;
+}
+/*contents가 가운데 들어가려면 left랑 right가 html라인 contents 위쪽
+float 아래쪽에 영향을 받을 태그를 둔다*/
+.main-float>.contents{
+    margin: 0 200px;
+    height: 500px;
+    background-color: deepskyblue;
+    box-sizing: border-box;
+    padding-top: 200px;
+}
+.main-float>.aside-r{
+    width: 200px; height: 500px;
+    float: right;
+    background-color: powderblue;
+    box-sizing: border-box;
+    padding-top: 200px;
+}
+
+/*main grid*/
+.main-grid{
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: 1fr;
+    height: 700px;
+}
+.main-grid>.aside-l{
+    background-color: dodgerblue;
+    box-sizing: border-box;
+    padding-top: 320px;
+}
+.main-grid>.contents{
+    background-color: deepskyblue;
+    box-sizing: border-box;
+    padding-top: 320px;
+}
+.main-grid>.aside-r{
+    background-color: powderblue;
+    box-sizing: border-box;
+    padding-top: 320px;
+}
+
+/*footer*/
+.footer{
+    background-color: blue;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 23px 0;
+}
